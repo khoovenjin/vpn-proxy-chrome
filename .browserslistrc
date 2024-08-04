@@ -1,0 +1,12 @@
+# Include all browsers with a market share greater than 0.2%
+# @see https://github.com/browserslist/browserslist#best-practices
+> 0.2%
+
+# Support the last 2 versions of each major browser
+last 2 versions
+
+not ie 10
+not ie_mob 10
+Chrome >= 36
+iOS >= 9
+safari >= 9

@@ -1,0 +1,11 @@
+{
+  "name": "VPN Proxy Chrome Extension",
+  "version": "1.0.0",
+  "description": "VPN Proxy Chrome Extension",
+  "manifest_version": 3,
+  "author": "Ven Jin",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "VPN Proxy Chrome Extension"
+  }
+}
