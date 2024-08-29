@@ -1,1 +1,11 @@
 @import "@/styles/base/reset/reset";
+
+// Base variables
+$padding-inline-primary: 1.6rem;
+$anim-primary: 0.25s ease;
+$anim-secondary: 0.15s ease;
+
+// Base classes
+.fullheight {
+  height: 100%;
+}
