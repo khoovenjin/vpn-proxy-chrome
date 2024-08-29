@@ -1,4 +1,4 @@
-type TIpCheckRequest = {
+export type TIpCheckRequest = {
   params: {
     format: string
   }
