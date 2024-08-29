@@ -6,15 +6,32 @@ import {
   isNavigationFailure,
   NavigationFailure,
   RouteLocationRaw,
+  RouteRecordRaw,
 } from "vue-router"
+import { useCountry } from "@/pinia/country"
+import { useServer } from "@/pinia/server"
 
 const Home = () => import("@/views/Home.vue")
+const Region = () => import("@/views/Region.vue")
 
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     component: Home,
     name: "home",
+    beforeEnter: () => {
+      Promise.allSettled([
+        useCountry().getCountries(),
+        useServer().getIpAddr(),
+        useServer().getConnections(),
+      ])
+    },
+  },
+  {
+    path: "/region",
+    component: Region,
+    name: "region",
+    beforeEnter: async () => await useCountry().getCountries(),
   },
 ]
 
