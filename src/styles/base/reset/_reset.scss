@@ -153,12 +153,17 @@ body {
 }
 
 * {
-  box-sizing: border-box;
   font-family: "Open Sans";
   font-size: 1.4rem;
   -webkit-font-smoothing: antialiased;
   -webkit-user-select: none;
   user-select: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 html,
