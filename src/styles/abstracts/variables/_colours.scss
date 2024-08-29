@@ -21,7 +21,7 @@
   --peach: #ffdab9;
   --pink: #ff66c4;
   --violet: #ff61ff;
-  --purple: #c800c8;
+  --purple: #936ee2;
   --indigo: #570085;
 }
 
@@ -29,6 +29,17 @@
 $black: var(--black);
 $white: var(--white);
 
-$primary: var(--blue);
-$secondary: var(--white);
-$tertiary: var(--turqoise);
+$primary: #a484ed;
+$secondary: #734ad0;
+$tertiary: #c6baf9;
+
+$primary-gray: #f5f6fa;
+$secondary-gray: #e5eafe;
+$tertiary-gray: #616161;
+$quaternary-gray: #82829c;
+$quinary-gray: #cbcacf;
+
+$primary-blue: #427bfe;
+
+$primary-bg-gradient: linear-gradient(180deg, #5695fd 0%, #1554ff 100%);
+$secondary-bg-gradient: linear-gradient(180deg, #021b42 0%, #031837 100%);
