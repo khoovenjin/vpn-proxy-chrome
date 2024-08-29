@@ -1,0 +1,78 @@
+@use "sass:meta";
+
+// default screen size
+@mixin default-size {
+  height: 60rem;
+  aspect-ratio: 5/8;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @content;
+}
+
+@mixin mask(
+  $image,
+  $position: center,
+  $color: $white,
+  $height: 100%,
+  $width: 100%
+) {
+  background-color: $color;
+  -webkit-mask: url($image) no-repeat $position;
+  mask: url($image) no-repeat $position;
+  height: $height;
+  width: $width;
+}
+
+@mixin square($size, $radius: 0) {
+  width: $size;
+  height: $size;
+  border-radius: $radius;
+}
+
+@mixin circle($size) {
+  @include square($size, 50%);
+}
+
+// 3-sized button
+@mixin vpn-button($variants...) {
+  $i: 1;
+
+  @each $key, $value in meta.keywords($variants) {
+    .btn-#{$key} {
+      @include flex-center;
+      @include circle(size-shr-mtpr($multiplier: $i));
+
+      background: $value;
+
+      @content ($key);
+    }
+
+    $i: $i + 1;
+  }
+}
+
+@mixin scrollbar(
+  $width: 0.5rem,
+  $radius: 0,
+  $thumb-clr: $quaternary-gray,
+  $track-clr: $quinary-gray
+) {
+  &::-webkit-scrollbar {
+    width: $width;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumb-clr;
+    border-radius: $radius;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $track-clr;
+    border-radius: $radius;
+  }
+}
