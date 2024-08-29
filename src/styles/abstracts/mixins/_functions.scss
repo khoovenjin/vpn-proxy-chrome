@@ -1,0 +1,4 @@
+// calculate size after shrink-based multiplier
+@function size-shr-mtpr($base: 20rem, $delta: 0.1, $multiplier: 0) {
+  @return $base * (1 - $multiplier * $delta);
+}
