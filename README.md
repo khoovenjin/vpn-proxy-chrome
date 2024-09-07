@@ -1,10 +1,10 @@
 # VPN Proxy Chrome Extension
 
-<br><br>
+<br>
 
 A private vpn chrome extension built on [Wireguard](https://www.wireguard.com/) protocol & [Wireproxy](https://github.com/pufferffish/wireproxy). Step-by-step guide article at [Medium](https://medium.com/@venjink/building-a-private-vpn-chrome-extension-9a9b381f264a).
 
-<br><br>
+<br>
 
 ## Demo
 
