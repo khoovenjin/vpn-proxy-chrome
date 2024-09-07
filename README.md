@@ -32,7 +32,7 @@ A private vpn chrome extension built on [Wireguard](https://www.wireguard.com/) 
 | <img src="https://user-images.githubusercontent.com/11247099/145112184-a9ff6727-661c-439d-9ada-963124a281f7.png" width="100" title="Vitest">                                                                           | Vitest     | Unit Test                | Unit Test                                |
 | <img src="https://camo.githubusercontent.com/118beaba8872ecd1cc0fa048abc853d8a1717a549bd2627eade643e4a5fd66d3/68747470733a2f2f766974656a732e6465762f6c6f676f2e737667" width="100" title="Vite">                        | Vite       | Dev Server               | Frontend Build Toolbox                   |
 
-## APIs Used
+## API(s) Used
 
 | API           | Purpose                |
 | ------------- | ---------------------- |
