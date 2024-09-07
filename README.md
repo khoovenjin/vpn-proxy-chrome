@@ -37,3 +37,9 @@ A private vpn chrome extension built on [Wireguard](https://www.wireguard.com/) 
 | API           | Purpose                |
 | ------------- | ---------------------- |
 | icanhazip.com | GET current IP Address |
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
+
+---
