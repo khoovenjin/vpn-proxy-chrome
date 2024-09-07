@@ -11,7 +11,7 @@ Step-by-step guide article at [Medium](https://medium.com/@venjink/building-a-pr
 ## Demo
 
 <div style="display: flex; flex-direction: row;" align="center">
-  <img src="src/assets/images/pvpn demo.gif" width="80%" />
+  <img src="src/assets/images/pvpn demo.gif" width="100%" />
 </div>
 
 ## Features
